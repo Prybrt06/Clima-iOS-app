@@ -8,19 +8,20 @@
 
 import UIKit
 
-class WeatherViewController: UIViewController, UITextFieldDelegate {
+class WeatherViewController: UIViewController, UITextFieldDelegate, WeatherManagerDelegate {
 
     @IBOutlet weak var conditionImageView: UIImageView!
     @IBOutlet weak var temperatureLabel: UILabel!
     @IBOutlet weak var cityLabel: UILabel!
     @IBOutlet weak var locationSearchTextField: UITextField!
     
-    let weatherManager = WeatherManager()
+    var weatherManager = WeatherManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         locationSearchTextField.placeholder = "Enter a City Name"
         
+        weatherManager.delegate = self
         locationSearchTextField.delegate = self
     }
 
@@ -56,6 +57,14 @@ class WeatherViewController: UIViewController, UITextFieldDelegate {
         }
         
         locationSearchTextField.text = ""
+    }
+    
+    func weatherDidUpdate(_ weatherManager: WeatherManager,weather: WeatherModel) {
+        print(weather.temparatureString)
+    }
+    
+    func didFailWithError(error: Error) {
+        print(error)
     }
 }
 
