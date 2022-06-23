@@ -2,7 +2,7 @@ import Foundation
 
 struct WeatherManager
 {
-    let weatherURL = "https://api.openweathermap.org/data/2.5/weather?appid=38e8c5f6c27e0a58a17d725d8dd9832c&units=metric"
+    let weatherURL = "https://api.openweathermap.org/data/2.5/weather?appid=[My API key]&units=metric"
     
     func fetchWeather(CityName: String)
     {
