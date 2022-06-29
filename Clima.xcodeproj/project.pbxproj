@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		ADAA27B1231BBFAF00365194 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAA27B0231BBFAF00365194 /* AppDelegate.swift */; };
 		ADAA27B3231BBFAF00365194 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAA27B2231BBFAF00365194 /* SceneDelegate.swift */; };
-		ADAA27B5231BBFAF00365194 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAA27B4231BBFAF00365194 /* WeatherViewController.swift */; };
 		ADAA27B8231BBFAF00365194 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADAA27B6231BBFAF00365194 /* Main.storyboard */; };
 		ADAA27BA231BBFB300365194 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADAA27B9231BBFB300365194 /* Assets.xcassets */; };
 		ADAA27BD231BBFB300365194 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADAA27BB231BBFB300365194 /* LaunchScreen.storyboard */; };
@@ -19,6 +18,7 @@
 		B4786E62286456DA0087668E /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4786E61286456DA0087668E /* WeatherManager.swift */; };
 		B4786E6428646C370087668E /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4786E6328646C370087668E /* WeatherData.swift */; };
 		B487937E286494BB00ACAFEE /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B487937D286494BB00ACAFEE /* WeatherModel.swift */; };
+		B49132D7286C3A55006824B7 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAA27B4231BBFAF00365194 /* WeatherViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -183,8 +183,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADAA27B5231BBFAF00365194 /* WeatherViewController.swift in Sources */,
 				B4786E6428646C370087668E /* WeatherData.swift in Sources */,
+				B49132D7286C3A55006824B7 /* WeatherViewController.swift in Sources */,
 				ADAA27B1231BBFAF00365194 /* AppDelegate.swift in Sources */,
 				B4786E62286456DA0087668E /* WeatherManager.swift in Sources */,
 				B487937E286494BB00ACAFEE /* WeatherModel.swift in Sources */,
